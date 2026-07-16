@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preflight — Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="shell">
+  <div class="panel-head">
+    <div>
+      <h1>Preflight</h1>
+      <div class="subtitle">Run the list before you go</div>
+    </div>
+    <div class="clock" id="clock">— : —</div>
+  </div>
+
+  <div class="runway">
+    <div class="runway-top">
+      <span class="runway-label">Checklist status</span>
+      <span class="runway-count" id="runwayCount">0 / 0 complete</span>
+    </div>
+    <div class="runway-track" id="runwayTrack"></div>
+  </div>
+
+  <div class="composer">
+    <div class="composer-row">
+      <input type="text" id="newTask" placeholder="Add an item to the list…" maxlength="140">
+      <button class="add-btn" id="addBtn">Add</button>
+    </div>
+    <div class="composer-options">
+      <div class="flag-select" id="flagSelect">
+        <span class="label">Priority</span>
+        <button class="flag-opt" data-p="high" title="High"><span class="dot"></span></button>
+        <button class="flag-opt selected" data-p="mid" title="Medium"><span class="dot"></span></button>
+        <button class="flag-opt" data-p="low" title="Low"><span class="dot"></span></button>
+      </div>
+      <input type="date" id="newDue">
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="active">Active</button>
+    <button class="tab" data-filter="done">Done</button>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="glyph">Clear skies</div>
+    <p>Nothing on the list. Add the first item above to start your checklist.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>r
+
+</body>
+</html>
