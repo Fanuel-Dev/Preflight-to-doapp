@@ -13,7 +13,7 @@
 ## 📸 Interface Preview & Interactive Walkthrough
 
 ### Application Dashboard & Task Matrix
-![TaskFlow Desktop Workspace](https://raw.githubusercontent.com/yourusername/taskflow/main/assets/screenshots/dashboard-preview.png)
+![TaskFlow Desktop Workspace](todo.png)
 
 ### 🎥 Live Interface Demo
 > **Watch TaskFlow in action:** Click the thumbnail below to see real-time task categorization, transitions, and state preservation.
